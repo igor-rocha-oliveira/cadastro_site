@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro_style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="box">
+        <div class="">
+            <fieldset>
+                <legend><b>Cadastro de Funcionarios</b></legend>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>        
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <div class="funcaoInput">
+                        <div class="">
+                            <input type="text" name="funcao" id="funcao" class="inputUser" required>
+                            <label for="funcao" class="labelInput">Função</label>
+                        </div> 
+                        <br>
+                        <div class="">
+                            <input type="number" name="tempofuncao" id="tempofuncao" class="inputUser" required>
+                            <label for="tempofuncao" class="labelInputfuncao">Tempo na Função</label>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="cpf" \pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" \title="Digite um CPF no formato: xxx.xxx.xxx-xx" class="inputUser" required>
+                    <label for="cpf" class="labelInput">CPF</label>
+                </div> 
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="pis" id="pis" class="inputUser" required>
+                    <label for="pis" class="labelInput">PIS</label>
+                </div> 
+                <br><br>
+                <div class="inputBox">
+                    <input type="number" name="rg" id="rg" class="inputUser" required>
+                    <label for="rg" class="labelInput">RG</label>
+                </div> 
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="mae" id="mae" class="inputUser" required>
+                    <label for="mae" class="labelInput">Nome da Mãe </label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="email" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">E-Mail</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput">Telefone</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade de Origem</label>
+                </div>
+                <br><br>
+                <div class="roupas">
+                    <div class="roupas-camisa">
+                        <label for="camisa">Camisa:</label>
+                        <select name="camisa" id="camisa">
+                            <option selected disabled value="Selecione">Selecione</option>
+                            <option value="pp">PP</option>
+                            <option value="p">P</option>
+                            <option value="m">M</option>
+                            <option value="g">G</option>
+                            <option value="gg">GG</option>
+                            <option value="outro">Outro...</option>
+                        </select>
+                    </div>
+                    <div class="roupas-calca">
+                        <label for="calca">Calça:</label>
+                        <select name="calca" id="calca">
+                            <option selected disabled value="Selecione">Selecione</option>
+                            <option value="pp">PP</option>
+                            <option value="p">P</option>
+                            <option value="m">M</option>
+                            <option value="g">G</option>
+                            <option value="gg">GG</option>
+                            <option value="outro">Outro...</option>
+                        </select>
+                    </div>
+                    <div class="roupas-bota">
+                        <label for="bota">Bota:</label>
+                        <select name="bota" id="bota">
+                            <option selected disabled value="Selecione">Selecione</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="outro">Outro...</option>
+                        </select>
+                    </div>
+                </div>
+                    <div class="inputBox">
+                        <p>Situação:</p>
+                        <input type="radio" id="enviado" name="situacao" value="enviado" required>
+                        <label for="enviado">Enviado</label>
+                    <input type="radio" id="esperando" name="situacao" value="esperando" required>
+                    <label for="esperando">Esperando</label>
+                </div>
+                <br>
+                <Div class="buttonBox">
+                    <div>
+                        <a href=""><button type="submit">Cadastrar</button></a>
+                        <a href="cadastro.html"><button type="reset">Limpar</button></a>
+                        <a href="menu.html"><button type="button">Voltar</button></a>
+                    </div>
+                </Div>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>
